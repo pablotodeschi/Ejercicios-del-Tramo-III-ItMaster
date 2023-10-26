@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercio N6</title>
+</head>
+
+<!-- Crear una función de multiplicación que recibe dos parámetros. Las condiciones son:
+
+Los parámetros se multiplican entre sí en el caso de que ambos sean positivos. Mostrar el resultado de la cuenta en la consola.
+Si uno o ambos números no son positivos no realizar la multiplicación y mostrar un mensaje de error en la consola. -->
+
+<body>
+    <script>
+       
+
+        function multiplican(num1,num2){
+            if(num1 > 0 && num2 > 0){
+            let resultado = num1 * num2;
+            console.log(resultado);
+        }else{
+            console.log("No se puede multiplicar con numeros negativos");
+        }
+        }
+
+        multiplican(-4,4);
+
+    </script>    
+</body>
+</html>

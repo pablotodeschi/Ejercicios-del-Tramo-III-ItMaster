@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio N8</title>
+</head>
+<!-- Crear un formulario que le solicite al usuario ingresar un código. El formulario debe tener un input del tipo text y un botón que llama a una función para validar. La validación debe verificar que el código sea exactamente de 8 caracteres y siempre debe comenzar con la letra A. Mostrar en un párrafo el mensaje si el código es válido o no. -->
+<body>
+    <h1>Ingrese codigo de 8 caracteres y que empiece con la letra A</h1>
+    <label for="">Ingrese el Codigo</label>
+    <input type="text"  id="codigo">
+    <input type="button" onclick="verifica()" value="Verificar" id="verifica">
+    <h3 id="respuesta"></h3>
+</body>
+<script>
+    function verifica(){
+        const pass = document.getElementById('codigo').value;
+        const longitud = pass.length;
+        if(longitud  === 8 && pass[0] === 'A' ){
+            respuesta.innerHTML = `${pass} es correcto`;
+        }else{
+            respuesta.innerHTML = `${pass} su codigo no es correcto`;
+        }
+    }
+</script>
+</html>

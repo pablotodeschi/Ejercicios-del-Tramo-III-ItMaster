@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio N9</title>
+</head>
+<!-- Crear un documento HTML:
+
+Crear un párrafo cuya id es parrafo. Y escribir un texto.
+En el mismo HTML crear un formulario que le solicita al usuario ingresar un número y agregar un botón que llame a una función.
+Crear un párrafo vacío destinado a escribir un mensaje de éxito o error
+Crear un script un vincularlo al HTML
+
+Crear la función que es llamada por el botón del formulario.
+Obtenga el valor numérico que ingresa el usuario.
+Validar que el valor sea igual o mayor a 10.
+Si se cumple que sea mayor o igual que 10, aplicar al elemento cuya id es párrafo el valor indicado por el usuario como estilo desde JavaScript, cambiando el tamaño de fuente (fontSize) en píxeles. Escribir un mensaje indicando que se ha aplicado el cambio de tamaño.
+En caso contrario mostrar el error en un párrafo destinado al mensaje. -->
+<body>
+    <p id="parrafo" style="font-size: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore fugiat aliquam optio accusantium natus alias velit odio facere non ipsam quis eum maxime fuga repellendus est minima eos, quos cum perferendis voluptatibus itaque doloribus quia? Eveniet excepturi illo dolor alias!</p>
+
+
+    <label>Tamaño del texto mayor o igual a 10</label>
+    <input type="number" id="tamano">
+    <input type="button" onclick="boton()" value="Tamaño">
+    <p id="resultado"></p>
+
+    <script>
+        function boton(){
+            const valor = document.getElementById('tamano').value;
+           
+            if(valor >= 10){
+                console.log(valor);
+                parrafo.style.fontSize = `${valor}px`;
+                resultado.innerHTML = ` El tamano de texto ahora es de ${valor}`;
+            }else{
+                console.log(valor);
+                resultado.innerHTML = ` No se cambio el tamano de texto`;
+            }
+        }
+        
+    </script>
+</body>
+
+</html>

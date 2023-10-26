@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercico N1</title>
+</head>
+
+
+<body>
+    <script>
+    //Dadas las variables nombre y apellido validar y mostrar la respuesta en consola. Las condiciones son:
+
+    //Cada una de las variables debe tener 3 caracteres o más.
+
+    //Si ambas variables cumplen la consigna mostrar el nombre y el apellido y un mensaje de éxito en consola.
+
+    //Si una o ambas variables no cumplen con el requisito indicar en un cartel el error (y cuál es la variable que no cumple o sin son ambas)
+            const nombre = "Pa";
+        const apellido = "To";
+
+        if(nombre.length >= 3 && apellido.length >= 3){
+            console.log("Nombre: ", nombre)
+            console.log("Apellido: ", apellido)
+        } else if (nombre.length < 3 && apellido.length < 3) {
+        // Ninguna de las variables cumple con la consigna
+        console.log("Error: tanto el nombre como el apellido no cumplen con la consigna.");
+        }else if(nombre.length < 3){
+            console.log("Su nombre es menos a 3 digitos")
+        }else { 
+            console.log("Su Apellido es menos a 3 digitos")
+        
+        }
+
+        
+       
+            
+        
+
+      
+        
+
+    </script>
+</body>
+</html>

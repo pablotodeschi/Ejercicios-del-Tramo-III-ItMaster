@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio N7</title>
+</head>
+<!-- Crear un formulario que le solicite al usuario ingresar un número. El formulario debe tener un input del tipo number y un botón que llama a una función. La función debe validar si el número es divisible por 100. Mostrar un mensaje en un párrafo indicando si es divisible o no -->
+<body>
+        <h1>Validar Divisibilidad por 100</h1>
+        <label>Ingrese un Numero</label>
+        <input type="number" id="numero">
+        <input type="button" onclick="dividir()" value="Dividir" id="validar">
+        <h5 id="resultado"></h5>
+    <script>
+        function dividir(){
+            const divisor = Number(document.getElementById('numero').value);
+            if(divisor % 100 === 0){
+                console.log(divisor + " es divisible por 100");
+                resultado.innerHTML = `${divisor} es divisible por 100.`;
+            }else{
+                console.log(divisor + " no divisible por 100");
+                resultado.innerHTML = `${divisor}  no divisible por 100.`;
+            }
+        }
+    </script>
+    <style>
+        h5{
+            color: red;
+        }
+    </style>
+
+
+
+</body>
+</html>
